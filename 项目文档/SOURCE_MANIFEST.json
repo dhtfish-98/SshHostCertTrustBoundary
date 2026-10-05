@@ -37,19 +37,19 @@
       "sha256": "ae263ce5c1cf7acbb8a6ed643a9278d4d99be399f43f21a4cfe4a29a1fae7dbd"
     },
     {
-      "bytes": 5363,
+      "bytes": 5411,
       "path": "hosttrust/policy.go",
-      "sha256": "46d99deb41d6aced29458984db8376f241c7a1fd7f7b0b0b4069f058d6c835da"
+      "sha256": "cd24bb8e3f21a4f803d2f737795b948312af69a052e7dd9a81a899910416a87d"
     },
     {
-      "bytes": 8419,
+      "bytes": 9023,
       "path": "hosttrust/policy_test.go",
-      "sha256": "d9287aeda3089aee66588c0403ba3ffea71fcfb1b9106d8817416948ddcbe977"
+      "sha256": "ea889062b87d6e66e2ea8021920602971b2956e4e0b9c0d69a02bf009f740926"
     },
     {
-      "bytes": 3579,
+      "bytes": 3602,
       "path": "internal/loopback/loopback.go",
-      "sha256": "2535c6d362eb504822810325c3aaf3a5083899a01ac30559ebb6c528ab5f4fcd"
+      "sha256": "a8790d9ff602b3463676353a8ddced2b951f6d318f9b9a328765971ffd9c8567"
     },
     {
       "bytes": 2784,
@@ -57,9 +57,9 @@
       "sha256": "e5d533fe5f7a624470bee954b307e8bd2f140953552fec8bd46a5b0325332c9f"
     },
     {
-      "bytes": 10310,
+      "bytes": 10366,
       "path": "scripts/run_validation.py",
-      "sha256": "806744f550b5a5625d67448c52df10358e99c25cab27f8131d42a4843cdcd7b4"
+      "sha256": "a99398c38089f45918c6531cf72660dff5976462a7b8b935221eb4abc1327409"
     },
     {
       "bytes": 1066,
@@ -72,9 +72,9 @@
       "sha256": "9db691f1a4ab15b1b64536ba2890f52339e0d1a5b7cf0cad699c6a581fa3ae27"
     },
     {
-      "bytes": 2432,
+      "bytes": 2503,
       "path": "项目文档/README.md",
-      "sha256": "6c5316b9acfc7a51e451e020fd959ba0206078e71e2152f9f13c2a911e541366"
+      "sha256": "b4fce6a2e868445bbacaee408a67c5e0874ad98ecd2bde9699a0c046465eca92"
     },
     {
       "bytes": 1082,

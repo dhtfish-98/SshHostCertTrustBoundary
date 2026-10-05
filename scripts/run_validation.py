@@ -154,13 +154,13 @@ def main() -> None:
         test_output = run(["go", "test", "-count=1", "-v", "./..."], directory, env, log)
         passed = [line.strip().split()[2] for line in test_output.splitlines() if line.strip().startswith("--- PASS: Test")]
         groups = [item for item in passed if "/" not in item]
-        expected_groups = {"TestRealLoopbackHostCertificateBoundary", "TestAuditFailureClosesConnectionBeforeAuthentication", "TestPolicyRejectsInvalidSetup"}
+        expected_groups = {"TestRealLoopbackHostCertificateBoundary", "TestAuditFailureClosesConnectionBeforeAuthentication", "TestPolicyRejectsInvalidSetup", "TestNilCertificateRejectsWithoutPanic"}
         required_cases = {"weak-baseline", "valid", "wrong-principal", "wrong-ca", "expired", "not-yet-valid", "revoked",
                           "unrestricted-principals", "multiple-principals", "logical-address-mismatch", "raw-host-key",
                           "user-certificate", "unknown-critical-option", "tampered-signature"}
         cases = {item.split("/", 1)[1] for item in passed if "/" in item}
         if set(groups) != expected_groups or cases != required_cases:
-            raise RuntimeError(f"expected three Go test groups on {name}")
+            raise RuntimeError(f"Go test groups or handshake cases incomplete on {name}")
         audit_path = build_root / f"{name}-audit.jsonl"
         output = run(["go", "run", "./cmd/hostcert-lab", "--self-test", "--audit-file", str(audit_path)], directory, env,
                      build_root / f"{name}-selftest.log")

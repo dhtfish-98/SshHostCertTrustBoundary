@@ -222,3 +222,20 @@ func TestPolicyRejectsInvalidSetup(t *testing.T) {
 		t.Error("accepted a missing audit")
 	}
 }
+
+func TestNilCertificateRejectsWithoutPanic(t *testing.T) {
+	ca := signer(t)
+	auditPath := filepath.Join(t.TempDir(), "audit.jsonl")
+	policy, err := hosttrust.NewPolicy(expectedHost, ca.PublicKey(), nil, &hosttrust.FileAudit{Path: auditPath})
+	if err != nil {
+		t.Fatal(err)
+	}
+	var absent *ssh.Certificate
+	if err := policy.HostKeyCallback()(net.JoinHostPort(expectedHost, "22"), nil, absent); err == nil {
+		t.Fatal("nil certificate was accepted")
+	}
+	got := decisions(t, auditPath)
+	if len(got) != 1 || got[0].Code != hosttrust.RawHostKey {
+		t.Fatalf("nil certificate audit mismatch: %+v", got)
+	}
+}

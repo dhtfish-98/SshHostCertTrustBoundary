@@ -95,6 +95,7 @@ func Probe(hostSigner ssh.Signer, logicalHost string, callback ssh.HostKeyCallba
 	}()
 	wire, err := net.DialTimeout("tcp", listener.Addr().String(), 5*time.Second)
 	if err != nil {
+		_ = listener.Close()
 		close(release)
 		<-done
 		return result, err

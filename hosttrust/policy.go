@@ -117,11 +117,11 @@ func (p *Policy) HostKeyCallback() ssh.HostKeyCallback {
 		if remote != nil {
 			decision.Remote = remote.String()
 		}
-		if key != nil {
+		cert, isCert := key.(*ssh.Certificate)
+		if key != nil && (!isCert || cert != nil) {
 			decision.CertificateFingerprint = ssh.FingerprintSHA256(key)
 		}
-		cert, isCert := key.(*ssh.Certificate)
-		if isCert && cert.SignatureKey != nil {
+		if cert != nil && cert.SignatureKey != nil {
 			decision.AuthorityFingerprint = ssh.FingerprintSHA256(cert.SignatureKey)
 		}
 		code := p.classify(addr, remote, key, cert, isCert)
@@ -141,7 +141,7 @@ func (p *Policy) classify(addr string, remote net.Addr, key ssh.PublicKey, cert 
 	if err != nil || host != p.host {
 		return AddressMismatch
 	}
-	if !isCert {
+	if !isCert || cert == nil {
 		return RawHostKey
 	}
 	if cert.CertType != ssh.HostCert {
