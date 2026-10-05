@@ -1,0 +1,14 @@
+{
+  "project": "SshHostCertTrustBoundary",
+  "version": "0.1.0",
+  "author": "dhtfish98",
+  "language": "Go",
+  "go_version": "1.26.2",
+  "validation_python_minimum": "3.11",
+  "source_archive_format": "tar",
+  "build_directory": "Build",
+  "documentation_directory": "项目文档",
+  "upstream_dependency": "golang.org/x/crypto@v0.57.1-0.20261004121123-8f0f1112abdb",
+  "upstream_commit": "8f0f1112abdbc13b6e53068b813cc327e40f2f9f",
+  "release_binary": false
+}

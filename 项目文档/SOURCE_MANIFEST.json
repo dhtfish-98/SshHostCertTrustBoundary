@@ -1,0 +1,98 @@
+{
+  "author": "dhtfish98",
+  "files": [
+    {
+      "bytes": 944,
+      "path": ".github/workflows/verify.yml",
+      "sha256": "c17852bdab551d0d46e04ff1f7151143706a8a63fd965b5c5137ee1721454ecf"
+    },
+    {
+      "bytes": 39,
+      "path": ".gitignore",
+      "sha256": "e344b8a304f8e0f3a23155a47c53392a926327af3e037febba407770617548a9"
+    },
+    {
+      "bytes": 14,
+      "path": "Build/.gitignore",
+      "sha256": "240a3e0d37d2e86b614063f5347eb02d4f99ca6c254de6b82871ff8d95532a7d"
+    },
+    {
+      "bytes": 864,
+      "path": "cmd/hostcert-lab/main.go",
+      "sha256": "72e5c315ce297f6605af4eb3b7fc87b1588917cdea73135d8f5f0fc2c8f74678"
+    },
+    {
+      "bytes": 178,
+      "path": "go.mod",
+      "sha256": "d1d5462c57aa2d6896a20beaf17f7738709d4637835b718fcf00a9caab7a49cc"
+    },
+    {
+      "bytes": 527,
+      "path": "go.sum",
+      "sha256": "66f9e06c570fd941a631da7558e043198aa8f221b0e0ac9cf4ed4b601cc82bfa"
+    },
+    {
+      "bytes": 1014,
+      "path": "hosttrust/audit.go",
+      "sha256": "ae263ce5c1cf7acbb8a6ed643a9278d4d99be399f43f21a4cfe4a29a1fae7dbd"
+    },
+    {
+      "bytes": 5363,
+      "path": "hosttrust/policy.go",
+      "sha256": "46d99deb41d6aced29458984db8376f241c7a1fd7f7b0b0b4069f058d6c835da"
+    },
+    {
+      "bytes": 8419,
+      "path": "hosttrust/policy_test.go",
+      "sha256": "d9287aeda3089aee66588c0403ba3ffea71fcfb1b9106d8817416948ddcbe977"
+    },
+    {
+      "bytes": 3579,
+      "path": "internal/loopback/loopback.go",
+      "sha256": "2535c6d362eb504822810325c3aaf3a5083899a01ac30559ebb6c528ab5f4fcd"
+    },
+    {
+      "bytes": 2784,
+      "path": "internal/loopback/selftest.go",
+      "sha256": "e5d533fe5f7a624470bee954b307e8bd2f140953552fec8bd46a5b0325332c9f"
+    },
+    {
+      "bytes": 10310,
+      "path": "scripts/run_validation.py",
+      "sha256": "806744f550b5a5625d67448c52df10358e99c25cab27f8131d42a4843cdcd7b4"
+    },
+    {
+      "bytes": 1066,
+      "path": "项目文档/LICENSE",
+      "sha256": "de926d6c22d9e061af6158b0f23146ce036bfb2a562f2f406acec2dc4bd8b298"
+    },
+    {
+      "bytes": 1573,
+      "path": "项目文档/ORIGIN.md",
+      "sha256": "9db691f1a4ab15b1b64536ba2890f52339e0d1a5b7cf0cad699c6a581fa3ae27"
+    },
+    {
+      "bytes": 2432,
+      "path": "项目文档/README.md",
+      "sha256": "6c5316b9acfc7a51e451e020fd959ba0206078e71e2152f9f13c2a911e541366"
+    },
+    {
+      "bytes": 1082,
+      "path": "项目文档/THIRD_PARTY.md",
+      "sha256": "3402725eca5dcd476f14c0a8fd7dcf10f1437dc4e7f709817a0a390fe7c8f5a7"
+    },
+    {
+      "bytes": 685,
+      "path": "项目文档/VERSION_STATUS.md",
+      "sha256": "1e8de935ba530759e3ee6ad3331cf608e7d1dc58c42ee668e43aa676aaff6640"
+    },
+    {
+      "bytes": 463,
+      "path": "项目文档/构建配置.json",
+      "sha256": "3341adc224bb11b2c0d3430b48fd10ebbcd442abf15dca68587b6b71d4d2a361"
+    }
+  ],
+  "project": "SshHostCertTrustBoundary",
+  "upstream_commit": "8f0f1112abdbc13b6e53068b813cc327e40f2f9f",
+  "version": "0.1.0"
+}
