@@ -1,6 +1,6 @@
 {
   "project": "SshHostCertTrustBoundary",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "dhtfish98",
   "language": "Go",
   "go_version": "1.26.2",

@@ -20,7 +20,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-VERSION = "0.1.0"
+VERSION = "0.1.1"
 PACKAGE = f"SshHostCertTrustBoundary-{VERSION}"
 PINNED_COMMIT = "8f0f1112abdbc13b6e53068b813cc327e40f2f9f"
 PINNED_MODULE = "v0.57.1-0.20261004121123-8f0f1112abdb"
@@ -189,7 +189,7 @@ def main() -> None:
         "source_archive": {"file": archive_path.name, "sha256": digest(archive_path.read_bytes())},
         "installed_binary_sha256": digest(binary.read_bytes()),
         "surfaces": surfaces,
-        "open": ["real_authorized_target_evidence", "CVP_eligibility_or_approval", "public_release"],
+        "open": ["real_authorized_target_evidence", "CVP_eligibility_or_approval"],
     }
     (build_root / "validation.json").write_text(json.dumps(receipt, ensure_ascii=False, sort_keys=True, indent=2) + "\n")
     print(build_root / "validation.json")

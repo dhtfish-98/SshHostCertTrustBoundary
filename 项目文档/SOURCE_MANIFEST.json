@@ -39,7 +39,7 @@
     {
       "bytes": 5411,
       "path": "hosttrust/policy.go",
-      "sha256": "cd24bb8e3f21a4f803d2f737795b948312af69a052e7dd9a81a899910416a87d"
+      "sha256": "7147b50551a375e192959fc35aecff48ead801034c2e025a2a5508b1fa104a3a"
     },
     {
       "bytes": 9023,
@@ -57,9 +57,9 @@
       "sha256": "e5d533fe5f7a624470bee954b307e8bd2f140953552fec8bd46a5b0325332c9f"
     },
     {
-      "bytes": 10366,
+      "bytes": 10348,
       "path": "scripts/run_validation.py",
-      "sha256": "a99398c38089f45918c6531cf72660dff5976462a7b8b935221eb4abc1327409"
+      "sha256": "2c671afbb18c1c4402464fc2594293c722e7560cbf75de2788b7fc4df8e5e1b8"
     },
     {
       "bytes": 1066,
@@ -72,9 +72,9 @@
       "sha256": "9db691f1a4ab15b1b64536ba2890f52339e0d1a5b7cf0cad699c6a581fa3ae27"
     },
     {
-      "bytes": 2503,
+      "bytes": 2817,
       "path": "项目文档/README.md",
-      "sha256": "b4fce6a2e868445bbacaee408a67c5e0874ad98ecd2bde9699a0c046465eca92"
+      "sha256": "39bc9a6a2f2e9a9632ae793b8df8b0b62ac59e93971ff2d5e4432d38af2b3761"
     },
     {
       "bytes": 1082,
@@ -82,17 +82,17 @@
       "sha256": "3402725eca5dcd476f14c0a8fd7dcf10f1437dc4e7f709817a0a390fe7c8f5a7"
     },
     {
-      "bytes": 685,
+      "bytes": 1197,
       "path": "项目文档/VERSION_STATUS.md",
-      "sha256": "1e8de935ba530759e3ee6ad3331cf608e7d1dc58c42ee668e43aa676aaff6640"
+      "sha256": "f96ee0b5a1eba6642f44fce8137efdd055dbad2a1d987110a52c3fb19d2ae1f4"
     },
     {
       "bytes": 463,
       "path": "项目文档/构建配置.json",
-      "sha256": "3341adc224bb11b2c0d3430b48fd10ebbcd442abf15dca68587b6b71d4d2a361"
+      "sha256": "72a677d3dc4776f0b98e44e55d8e1515df6e92b6c9903b6b6848faebe55e7613"
     }
   ],
   "project": "SshHostCertTrustBoundary",
   "upstream_commit": "8f0f1112abdbc13b6e53068b813cc327e40f2f9f",
-  "version": "0.1.0"
+  "version": "0.1.1"
 }
